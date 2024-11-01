@@ -187,11 +187,6 @@ vendor/lib64/libloc_api_v02.so
 
 # Graphics
 
-# IPA-Firmware
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.lahaina.so
 vendor/lib/libgcs-calwrapper.so
