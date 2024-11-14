@@ -62,7 +62,6 @@ sec_tsp_log.ko
 camera.ko
 rdbg.ko
 machine_dlkm.ko
-uwb.ko
 qm1d1b0004.ko
 msi001.ko
 sec_cmd.ko
