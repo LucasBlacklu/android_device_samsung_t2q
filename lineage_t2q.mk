@@ -8,6 +8,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from t2q device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Debugging
+# TARGET_USE_PREBUILT_DTBO := true
+
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := t2q
 PRODUCT_MANUFACTURER := samsung
