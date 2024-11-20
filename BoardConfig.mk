@@ -35,5 +35,8 @@ TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := t2q
 
+# Recovery
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Security patch
 VENDOR_SECURITY_PATCH := 2024-03-01
