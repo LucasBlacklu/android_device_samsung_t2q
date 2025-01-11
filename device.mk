@@ -22,6 +22,10 @@ $(call inherit-product, device/samsung/sm8350-common/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.t2q.rc \
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
