@@ -68,10 +68,10 @@ on boot
 
 on post-fs-data
 # Samsung Pay
-    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
+    mkdir /efs/pfw_data 0760 system system 
 
 # MST/NFC Switch
-    chown vendor_spay system /dev/mst_ctrl
+    chown system system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
 
 # Create carrier folder for HiddenMenu
