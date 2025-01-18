@@ -269,9 +269,6 @@ vendor/lib64/libnetmgr_common.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 
-# Radio-IMS
--app/ImsSettings/ImsSettings.apk
-
 # SSR
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
