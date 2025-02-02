@@ -26,24 +26,6 @@ vendor/etc/audconf/OPEN/Hdmi_cal.acdb
 vendor/etc/audconf/OPEN/Headset_cal.acdb
 vendor/etc/audconf/OPEN/Speaker_cal.acdb
 
-# Audio-Hardware
-vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-
-# Bluetooth
-
-# Charger
-vendor/bin/hvdcp_opti
-vendor/etc/charger_fstab.qti
-vendor/etc/charger_fw_fstab.qti
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-
-# DRM
-vendor/bin/qseecomd
-
-# Display-Hardware
-
 # Display-calibration
 vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FAB_AMB667XU01_FHD.xml
 
@@ -57,6 +39,9 @@ vendor/lib/modules/fingerprint.ko
 vendor/lib/modules/fingerprint_sysfs.ko
 
 # Firmware
+vendor/firmware/mfc/mfc_fw_flash.bin
+vendor/firmware/uwb/libsr100t_dev_fw.bin
+vendor/firmware/uwb/libsr100t_prod_fw.bin
 vendor/firmware/bcm4375B1_murata.hcd
 vendor/firmware/bcm4375B1_semco.hcd
 vendor/firmware/bcm4375B1_semco_sem.hcd
@@ -72,78 +57,31 @@ vendor/firmware/cs35l40-bot-dsp1-spk-prot.bin
 vendor/firmware/cs35l40-rcv-dsp1-spk-prot-calib.bin
 vendor/firmware/cs35l40-rcv-dsp1-spk-prot.bin
 vendor/firmware/cs40l20.bin
-vendor/firmware/cs40l25a_f0.bin
 vendor/firmware/cs40l25a.wmfw
+vendor/firmware/cs40l25a_f0.bin
 vendor/firmware/dax_param.bin
 vendor/firmware/nvram.txt_1rh_es43_b1
-vendor/firmware/uwb/libsr100t_dev_fw.bin
-vendor/firmware/uwb/libsr100t_prod_fw.bin
 vendor/firmware/y792_t2.bin
-vendor/firmware/mfc/mfc_fw_flash.bin 
-
-# GPS
-vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
-vendor/lib/libloc_api_v02.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/libloc_api_v02.so
-
-# GPS-Hardware
-
-# Graphics
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.lahaina.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
-vendor/lib64/hw/sound_trigger.primary.lahaina.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
+vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 
 # Media
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvpptestutils.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
 vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/libvpptestutils.so
-
-# Media-Hardware
-vendor/lib/libc2dcolorconvert.so
-vendor/lib/libOmxAacEnc.so
-vendor/lib/libOmxAmrEnc.so
-vendor/lib/libOmxEvrcEnc.so
-vendor/lib/libOmxG711Enc.so
-vendor/lib/libOmxQcelp13Enc.so
-vendor/lib64/libc2dcolorconvert.so
-vendor/lib64/libOmxAacEnc.so
-vendor/lib64/libOmxAmrEnc.so
-vendor/lib64/libOmxEvrcEnc.so
-vendor/lib64/libOmxG711Enc.so
-vendor/lib64/libOmxQcelp13Enc.so
+vendor/lib/libvpphcp.so
+vendor/lib64/libvpphcp.so
 
 # NFC
-vendor/etc/libuwb-nxp.conf
 vendor/etc/nfc/libnfc-nxp_RF.conf
+vendor/etc/libuwb-nxp.conf
 vendor/lib/modules/5.4-gki/nfc_sec.ko
 vendor/lib/modules/nfc_sec.ko
 
@@ -151,39 +89,11 @@ vendor/lib/modules/nfc_sec.ko
 
 # Postprocessing
 
-# QMI
-vendor/bin/pd-mapper
-vendor/lib/libqdi.so
-vendor/lib/libqmi.so
-vendor/lib64/libqdi.so
-vendor/lib64/libqmi.so
-
-# Radio
-vendor/bin/netmgrd
-vendor/bin/rmt_storage
-vendor/lib/libconfigdb.so
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libnetmgr.so
-vendor/lib/libnetmgr_common.so
-vendor/lib/libpdmapper.so
-vendor/lib/libpdnotifier.so
-vendor/lib64/libconfigdb.so
-vendor/lib64/libdsi_netctrl.so
-vendor/lib64/libnetmgr.so
-vendor/lib64/libnetmgr_common.so
-vendor/lib64/libpdmapper.so
-vendor/lib64/libpdnotifier.so
-
-# SSR
-vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/lib/modules/5.4-gki/subsystem_restart.ko
-vendor/lib/modules/5.4-gki/sysmon_subsystem_stats.ko
-
 # Samsung
 vendor/bin/hw/vendor.samsung.hardware.uwb@1.0-service
 vendor/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc
 vendor/etc/permissions/samsung.hardware.uwb.xml
+vendor/lib64/uwb_uci.hal.so
 
 # Sensor-configs
 vendor/etc/sensors/config/lahaina_ak991x_0.json
