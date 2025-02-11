@@ -25,6 +25,9 @@ BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_CONFIG := vendor/t2q_defconfig
 
+# Kernel Modules
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2024-11-01
 
