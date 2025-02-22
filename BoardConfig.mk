@@ -23,7 +23,7 @@ TARGET_SCREEN_DENSITY := 450
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_CONFIG := vendor/t2q_defconfig
+TARGET_KERNEL_CONFIG := t2q_defconfig
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
