@@ -1,1 +1,12 @@
 # All unpinned blobs below are extracted from t2qzhx-user 14 UP1A.231005.007 G9960ZHSBGXJ4 release-keys
+
+# Firmware
+vendor/firmware/cs40l20.bin
+vendor/firmware/y792_t2.bin
+vendor/firmware/mfc/mfc_fw_flash.bin 
+vendor/firmware/cs40l25a.wmfw
+vendor/firmware/cs40l25a_cal.wmfw
+vendor/firmware/cs40l25a_clab.bin
+vendor/firmware/cs40l25a_clab.wmfw
+vendor/firmware/cs40l25a_exc.bin
+vendor/firmware/cs40l25a_f0.bin
